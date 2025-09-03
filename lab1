@@ -1,0 +1,56 @@
+age = 16
+height = 1.78
+name = "Artem"
+is_student = True
+grades = [12, 11, 10, 9]
+coordinates = (50.45, 30.52)
+person = {"name": "Artem", "age": 16}
+unique_numbers = {1, 2, 3, 3}
+
+variables = {
+    "age": age,
+    "height": height,
+    "name": name,
+    "is_student": is_student,
+    "grades": grades,
+    "coordinates": coordinates,
+    "person": person,
+    "unique_numbers": unique_numbers
+}
+
+for var_name, value in variables.items():
+    print(f"{var_name}, {type(value).__name__} : {value}")
+
+print("\n--- Оператори ---")
+
+a = 10
+b = 3
+print("Додавання:", a + b)
+print("Віднімання:", a - b)
+print("Множення:", a * b)
+print("Ділення:", a / b)
+print("Цілочисельне ділення:", a // b)
+print("Остача від ділення:", a % b)
+print("Піднесення до степеня:", a ** b)
+
+print("a == b:", a == b)
+print("a != b:", a != b)
+print("a > b:", a > b)
+print("a < b:", a < b)
+print("a >= b:", a >= b)
+print("a <= b:", a <= b)
+
+x = True
+y = False
+print("x and y:", x and y)
+print("x or y:", x or y)
+print("not x:", not x)
+
+c = 5
+c += 2
+print("c після += 2:", c)
+c *= 3
+print("c після *= 3:", c)
+
+print("Чи є 12 у списку grades?", 12 in grades)
+print("Чи є 15 у списку grades?", 15 in grades)
